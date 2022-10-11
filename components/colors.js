@@ -1,6 +1,12 @@
-let alerts = {
-  title: 'Alerts',
-  description: "Alerts' description",
+let colors = {
+  title: "Color",
+  description: "",
+  html: "",
+  htmlSource: "./htmlComponents/colors.html",
 };
 
-export default alerts;
+fetch(colors.htmlSource)
+  .then((response) => response.text())
+  .then((text) => (colors.html = text));
+
+export default colors;
