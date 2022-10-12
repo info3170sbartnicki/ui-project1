@@ -1,9 +1,13 @@
 :root {
+  /* Color variables */
   --main: #ffa306;
   --secondary: #573280;
   --accent: #23022f;
   --dark: #23252e;
   --light: #eff8e2;
+  /* Font variables */
+  --headers: 'Cinzel Decorative';
+  --text: 'Julius Sans One';
 }
 
 * {
@@ -15,7 +19,7 @@ body {
   color: var(--dark);
   margin: unset;
   height: 100vh;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--text), sans-serif;
   /* height: 100vh;
   overflow: hidden; */
 }
@@ -25,12 +29,19 @@ nav {
   color: var(--accent);
   border-right: 2px solid var(--accent);
   width: 17%;
-  padding: 30px;
+  padding: 70px 30px 30px 30px;
 }
 
 nav ul {
   list-style: none;
   padding-left: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--headers);
 }
 
 li:hover {
@@ -41,9 +52,11 @@ li:hover {
 main {
   background-color: var(--light);
   width: 83%;
+  height: 100%;
 }
 
 header {
+  font-family: var(--headers);
   background-color: var(--secondary);
   color: var(--main);
   font-size: large;
@@ -62,10 +75,9 @@ header img {
 
 #componentBox {
   padding: 40px 20px 20px 20px;
-  height: 100%;
 }
 
 iframe {
   width: 100%;
-  height: 70%;
+  height: 70vh;
 }
