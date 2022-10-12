@@ -1,0 +1,20 @@
+.rowColor {
+  display: grid;
+  grid-template-columns: 30% 30% 30% 30%;
+  padding-right: 50%;
+  margin-left: 0.5%;
+}
+
+.color-card {
+  box-shadow: 0px 3px 3px gray;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.js-color {
+  height: 100px;
+}
+
+.color-data {
+  padding: 3%;
+}
