@@ -1,6 +1,12 @@
-let alerts = {
-  title: 'Alerts',
-  description: "Alerts' description",
+let navBar = {
+  title: 'Nav Bar',
+  description: '',
+  html: '<iframe src="./htmlComponents/navbar.html"></iframe>',
+  htmlSource: './htmlComponents/navbar.html',
 };
 
-export default alerts;
+// fetch(navBar.htmlSource)
+//   .then((response) => response.text())
+//   .then((text) => (navBar.html = ``));
+
+export default navBar;
