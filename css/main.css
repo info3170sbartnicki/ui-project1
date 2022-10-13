@@ -1,13 +1,13 @@
 :root {
   /* Color variables */
-  --main: #ffa306;
+  --main: #d79f3f;
   --secondary: #573280;
   --accent: #23022f;
   --dark: #23252e;
   --light: #eff8e2;
   /* Font variables */
-  --headers: 'Cinzel Decorative';
-  --text: 'Julius Sans One';
+  --headers: 'Cinzel Decorative', sans-serif;
+  --text: 'Julius Sans One', sans-serif;
 }
 
 * {
@@ -20,8 +20,6 @@ body {
   margin: unset;
   height: 100vh;
   font-family: var(--text), sans-serif;
-  /* height: 100vh;
-  overflow: hidden; */
 }
 
 nav {
