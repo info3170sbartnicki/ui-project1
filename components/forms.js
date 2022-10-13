@@ -1,6 +1,12 @@
-let alerts = {
-  title: 'Alerts',
-  description: "Alerts' description",
+let component = {
+  title: 'Forms',
+  description: 'Forms description',
+  html: '',
+  htmlSource: './htmlComponents/forms.html',
 };
 
-export default alerts;
+fetch(component.htmlSource)
+  .then((response) => response.text())
+  .then((text) => (component.html = text));
+
+export default component;
