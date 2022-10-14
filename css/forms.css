@@ -1,1 +1,28 @@
+form {
+  background-color: var(--dark);
+  font-family: var(--headers);
+  color: var(--light);
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 4px;
+}
 
+.fnx-form-wrap {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.fnxforms {
+  margin-top: 10px;
+  background-color: var(--accent);
+  color: var(--light);
+  border: 1px solid var(--light);
+  padding: 10px;
+  /* border-radius: 10px; */
+}
+
+form > .btn {
+  margin-left: -1px;
+}
