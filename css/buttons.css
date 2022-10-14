@@ -17,6 +17,14 @@
     border: 1px solid var(--dark);
 }
 
+.btn.btn-md {
+    padding: 12px 60px 14px;
+}
+
+.btn.btn-sm {
+    padding: 8px 20px 10px;
+}
+
 .btn:hover {
     color: var(--main);
     border: 1px solid var(--main);
@@ -61,25 +69,35 @@
 }
 
 @media (max-width: 768px) {
-    .btn.sm {
-        padding: 12px 60px 14px;
-        font-size: 0.5rem;
-        letter-spacing: 0.3em;
-        margin: 0.5rem;
+    .btn {
+        padding: 8px 40px 10px;
+        font-size: 0.4rem;
+        letter-spacing: 0.2em;
+        margin: 0.35rem;
     }
 }
 
 @media (min-width: 768px) {
-    .btn.md {
+    .btn {
         padding: 12px 60px 14px;
         font-size: 0.5rem;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.25em;
         margin: 0.5rem;
     }
 }
 
 @media (min-width: 1200px) {
-    .btn.lg {
-
+    .btn {
+        padding: 18px 80px 20px;
+        font-size: 0.625rem;
+        letter-spacing: 0.3em;
+        margin: 0.625rem;
     }
+}
+
+.section {
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }

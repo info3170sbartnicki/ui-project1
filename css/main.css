@@ -48,6 +48,8 @@ li:hover {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   background-color: var(--light);
   width: 83%;
   height: 100%;
@@ -72,6 +74,8 @@ header img {
 }
 
 #componentBox {
+  flex-grow: 1;
+  overflow: auto;
   padding: 40px 20px 20px 20px;
 }
 
