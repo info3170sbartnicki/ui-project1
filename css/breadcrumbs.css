@@ -1,0 +1,32 @@
+.breadcrumbSection {
+  background-color: #eff8e2
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #573280;
+    border-radius: 10px;
+  }
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #eff8e2;
+    content: ">";
+  }
+  
+  ul.breadcrumb li a {
+    color: #ffa306;
+    text-decoration: none;
+  }
+  
+  ul.breadcrumb li a:hover {
+    color: #eff8e2;
+    text-decoration: underline;
+    transition: transform .2s;
+  }
