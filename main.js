@@ -1,6 +1,6 @@
 //First, we're importing all our components
 import card from './components/card.js';
-import button from './components/button.js';
+import buttons from './components/buttons.js';
 import alerts from './components/alerts.js';
 import breadcrumbs from './components/breadcrumbs.js';
 import grid from './components/grid.js';
@@ -18,7 +18,7 @@ let components = [
   pageLayouts,
   alerts,
   breadcrumbs,
-  button,
+  buttons,
   card,
   forms,
   grid,

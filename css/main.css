@@ -2,14 +2,14 @@
 
 :root {
   /* Color variables */
-  --main: #ffa306;
+  --main: #d79f3f;
   --secondary: #573280;
   --accent: #23022f;
   --dark: #23252e;
   --light: #eff8e2;
   /* Font variables */
-  --headers: 'Cinzel Decorative';
-  --text: 'Inter Tight';
+  --headers: 'Cinzel Decorative', sans-serif;
+  --text: 'Inter Tight', sans-serif;
 }
 
 * {
@@ -22,8 +22,6 @@ body {
   margin: unset;
   height: 100vh;
   font-family: var(--text), sans-serif;
-  /* height: 100vh;
-  overflow: hidden; */
 }
 
 nav {
@@ -52,6 +50,8 @@ li:hover {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   background-color: var(--light);
   width: 83%;
   height: 100%;
@@ -76,6 +76,8 @@ header img {
 }
 
 #componentBox {
+  flex-grow: 1;
+  overflow: auto;
   padding: 40px 20px 20px 20px;
 }
 
