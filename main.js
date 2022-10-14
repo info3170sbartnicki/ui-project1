@@ -3,6 +3,7 @@ import card from './components/card.js';
 import button from './components/button.js';
 import alerts from './components/alerts.js';
 import breadcrumbs from './components/breadcrumbs.js';
+import footer from './components/footer.js';
 import grid from './components/grid.js';
 import navBar from './components/navBar.js';
 import pageLayout from './components/pageLayout.js';
@@ -10,7 +11,6 @@ import colors from './components/colors.js';
 import typography from './components/typography.js';
 import icons from './components/icons.js';
 import forms from './components/forms.js';
-import footer from './components/footer.js';
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
 let components = [
