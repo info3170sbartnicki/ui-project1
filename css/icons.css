@@ -1,0 +1,74 @@
+#iconWrapper {
+  display: flex;
+  gap: 2%;
+}
+
+.iconBox {
+  width: 15%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--secondary);
+  border-radius: 10px;
+  height: auto;
+}
+
+.iconBox:hover {
+  cursor: pointer;
+}
+
+.iconBox p {
+  padding-top: 20px;
+}
+
+.ficon-twitter {
+  content: url(../img/twitter.svg);
+}
+
+.ficon-geo {
+  content: url(../img/geo-alt.svg);
+}
+
+.ficon-facebook {
+  content: url(../img/facebook.svg);
+}
+
+.ficon-instagram {
+  content: url(../img/instagram.svg);
+}
+
+.ficon-github {
+  content: url(../img/github.svg);
+}
+
+.ficon-mail {
+  content: url(../img/envelope.svg);
+}
+
+.large {
+  width: 50px;
+  height: 50px;
+}
+
+.medium {
+  width: 30px;
+  height: 30px;
+}
+
+.small {
+  width: 20px;
+  height: 20px;
+}
+
+.gold {
+  filter: invert(77%) sepia(77%) saturate(3367%) hue-rotate(353deg)
+    brightness(102%) contrast(105%);
+}
+
+.purple {
+  filter: invert(20%) sepia(46%) saturate(1771%) hue-rotate(241deg)
+    brightness(96%) contrast(91%);
+}

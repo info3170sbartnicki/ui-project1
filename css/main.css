@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
 :root {
   /* Color variables */
   --main: #d79f3f;
@@ -7,7 +9,7 @@
   --light: #eff8e2;
   /* Font variables */
   --headers: 'Cinzel Decorative', sans-serif;
-  --text: 'Julius Sans One', sans-serif;
+  --text: 'Inter Tight', sans-serif;
 }
 
 * {
