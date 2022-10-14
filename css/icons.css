@@ -5,7 +5,7 @@
 
 .iconBox {
   width: 15%;
-  padding-top: 20px;
+  padding: 20px 5px 5px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,8 +14,6 @@
   border: 8px solid var(--secondary);
   border-radius: 10px;
   height: auto;
-  box-sizing: border-box;
-  padding: 5px;
   position: relative;
 }
 
