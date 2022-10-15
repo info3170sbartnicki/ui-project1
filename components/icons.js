@@ -12,7 +12,7 @@ fetch(component.htmlSource)
   .then((text) => (component.html = text));
 
 // My messy code for displaying code of an icon after clicking it.
-let iconsButton = document.querySelector('#componentList li:nth-of-type(7)');
+let iconsButton = document.querySelector('#componentList li:nth-of-type(8)');
 iconsButton.addEventListener('click', () => {
   setTimeout(iconClicks, 50);
   function iconClicks() {
