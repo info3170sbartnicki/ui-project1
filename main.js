@@ -11,11 +11,13 @@ import typography from './components/typography.js';
 import icons from './components/icons.js';
 import forms from './components/forms.js';
 import footer from './components/footer.js';
+import dataVisualization from './components/dataVisualization.js';
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
 let components = [
   typography,
   colors,
+  dataVisualization,
   pageLayouts,
   alerts,
   breadcrumbs,
