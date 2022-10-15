@@ -3,7 +3,7 @@ let typography = {
   description:
     'Used to display provided data in tile-like layout, pefect for items requiring photo, title and description. Also provides an easy way to add action button.',
   html: '',
-  htmlSource: './htmlComponents/typograhy.html',
+  htmlSource: './htmlComponents/typography.html',
 };
 
 fetch(typography.htmlSource)
