@@ -10,6 +10,7 @@ import colors from './components/colors.js';
 import typography from './components/typography.js';
 import icons from './components/icons.js';
 import forms from './components/forms.js';
+import footer from './components/footer.js';
 import dataVisualization from './components/dataVisualization.js';
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
@@ -22,6 +23,7 @@ let components = [
   breadcrumbs,
   buttons,
   card,
+  footer,
   forms,
   grid,
   icons,
