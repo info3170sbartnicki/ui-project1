@@ -1,0 +1,39 @@
+.footer {
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+  right: 10px;
+  height: 10vh;
+  background-color: var(--secondary);
+  color: var(--main);
+  text-align: center;
+}
+
+.footer a:visited {
+  color: var(--main);
+}
+
+.footer a:link {
+  color: var(--main);
+}
+
+.footer .contact {
+  padding: 7px;
+}
+
+.socialMedia {
+  position: absolute;
+  right: 70px;
+  bottom: 25px;
+}
+
+.footer .logo {
+  position: absolute;
+  left: 70px;
+  bottom: -18px;
+}
+
+.fwlogo {
+  height: 100px;
+  width: 100px;
+}
