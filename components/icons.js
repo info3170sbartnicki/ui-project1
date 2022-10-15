@@ -1,6 +1,6 @@
 let component = {
   title: 'Icons',
-  description: `Our icons are simple to use. All you need is &lt;i>&lt;/i> tag and couple of classes. For desired size 
+  description: `Our icons are simple to use. All you need is &lt;i>&lt;/i> tag and couple classes. For desired size 
           add classes <span class="gold">.ficon-small</span>/<span class="gold">.ficon-medium</span>/<span class="gold">.ficon-large</span>. Also available
           in FenixWing brand colors, just add classes <span class="gold">.gold</span> or <span class="gold">.purple</span>.`,
   html: '',

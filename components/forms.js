@@ -1,6 +1,6 @@
 let component = {
   title: 'Forms',
-  description: 'Nice forms, eh?',
+  description: 'Forms description',
   html: '',
   htmlSource: './htmlComponents/forms.html',
 };
