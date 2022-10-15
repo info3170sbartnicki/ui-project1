@@ -1,0 +1,39 @@
+.footer {
+  position: fixed;
+  left: 10px;
+  bottom: 5px;
+  right: 10px;
+  height: 10%;
+  background-color: #573280;
+  color: #ffa306;
+  text-align: center;
+}
+
+a:visited {
+  color: #ffa306;
+}
+
+a:link {
+  color: #ffa306;
+}
+
+.contact {
+  padding: 7px;
+}
+
+.socialMedia {
+  position: absolute;
+  right: 70px;
+  bottom: 25px;
+}
+
+.logo {
+  position: absolute;
+  left: 70px;
+  bottom: -18px;
+}
+
+.fwlogo {
+  height: 100px;
+  width: 100px;
+}
