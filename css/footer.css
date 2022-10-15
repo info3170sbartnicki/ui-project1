@@ -4,20 +4,20 @@
   bottom: 5px;
   right: 10px;
   height: 10vh;
-  background-color: #573280;
-  color: #ffa306;
+  background-color: var(--secondary);
+  color: var(--main);
   text-align: center;
 }
 
-a:visited {
-  color: #ffa306;
+.footer a:visited {
+  color: var(--main);
 }
 
-a:link {
-  color: #ffa306;
+.footer a:link {
+  color: var(--main);
 }
 
-.contact {
+.footer .contact {
   padding: 7px;
 }
 
@@ -27,7 +27,7 @@ a:link {
   bottom: 25px;
 }
 
-.logo {
+.footer .logo {
   position: absolute;
   left: 70px;
   bottom: -18px;
