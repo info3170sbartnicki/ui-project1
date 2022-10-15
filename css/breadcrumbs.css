@@ -1,0 +1,28 @@
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: var(--light);
+  content: '>';
+}
+
+ul.breadcrumb li a {
+  color: var(--main);
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: var(--light);
+  text-decoration: underline;
+  transition: transform 0.2s;
+}
