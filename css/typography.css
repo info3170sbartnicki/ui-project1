@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+.title {
+    font-size: 1.2rem;
+    line-height: 110%;
+    font-family: 'Cinzel Decorative', sans-serif;
+}
+
+.heading-title {
+   
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.heading-description {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    
+}
+
+.secondary-font {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 30px;
+    font-weight: bold;   
+}
+
+.headings {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.headings:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+    
+.inline-text {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.heading-text {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+}
+
+.cardSection {
+    border: 1px solid var(blue);
+    border-radius: 10px;
+    padding: 20px
+  }
+
+.inline-text-elements {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+}
+
+.paragraph-text {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.paragraph-desc {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+}
