@@ -5,19 +5,39 @@
 
 .iconBox {
   width: 15%;
-  padding-top: 20px;
+  padding: 20px 5px 5px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid var(--secondary);
+  border: 8px solid var(--secondary);
   border-radius: 10px;
   height: auto;
+  position: relative;
 }
 
 .iconBox:hover {
   cursor: pointer;
+  background-color: rgb(from var(--dark) r g b / 0.5);
+}
+
+.iconBox:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark);
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.iconBox i {
+  margin-top: 20px;
+}
+
+.iconBox i svg {
+  box-shadow: 5px 5px 5px;
 }
 
 .iconBox p {
