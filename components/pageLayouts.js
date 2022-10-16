@@ -1,6 +1,6 @@
 let alerts = {
-  title: 'Alerts',
-  description: "Alerts' description",
+  title: 'Page Layouts',
+  description: 'Layouts description',
 };
 
 export default alerts;
