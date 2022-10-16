@@ -1,54 +1,81 @@
-<head> 
-  <title>Navbar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="/assets/favicon.ico" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Cinzel+Decorative"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="../css/navbar.css" />
-</head>
-
-
-
-<div class="section">
-  <header>
-    <nav>
-       <ul>
-           <li><a href="#">Home</a></li>
-           <li><a href="#">Products</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Contact</a></li>
-       </ul>
-    </nav>
-    <div class="logo">
-     <img src="../img/FenixWing.png" alt="FenixWing">
-   </div>
- </header>
-
-
-
 <div class="cardSection">
+  <div class="nav-section">
+    <header>
+      <div class="nav-logo">
+        <img src="../img/FenixWing.png" alt="FenixWing" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <div class="html">
     <div class="divider">HTML</div>
     <pre>
-        <code class="language-html"> 
-          &lt;header&gt;
+      <code class="language-html"> 
+      &lt;div class=&quot;nav-section&quot;&gt;
+        &lt;header&gt;
+          &lt;div class=&quot;nav-logo&quot;&gt;
+            &lt;img src=&quot;../img/FenixWing.png&quot; alt=&quot;FenixWing&quot; /&gt;
+          &lt;/div&gt;
           &lt;nav&gt;
-             &lt;ul&gt;
-                 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-             &lt;/ul&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
           &lt;/nav&gt;
-          &lt;div class=&quot;logo&quot;&gt;
-           &lt;img src=&quot;../img/FenixWing.png&quot; alt=&quot;FenixWing&quot;&gt;
-         &lt;/div&gt;
-       &lt;/header&gt;
-        </code>
+        &lt;/header&gt;
+      &lt;/div&gt;
+      </code>
     </pre>
   </div>
 </div>
+<br />
+<p>Add the class .reversed to flip the order.</p>
+<br />
+<div class="cardSection">
+  <div class="nav-section">
+    <header class="reversed">
+      <div class="nav-logo">
+        <img src="../img/FenixWing.png" alt="FenixWing" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="html">
+    <div class="divider">HTML</div>
+    <pre>
+      <code class="language-html"> 
+      &lt;div class=&quot;nav-section&quot;&gt;
+        &lt;header class=&quot;reversed&quot;&gt;
+          &lt;div class=&quot;nav-logo&quot;&gt;
+            &lt;img src=&quot;../img/FenixWing.png&quot; alt=&quot;FenixWing&quot; /&gt;
+          &lt;/div&gt;
+          &lt;nav&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/header&gt;
+      &lt;/div&gt;
+      </code>
+    </pre>
+  </div>
 </div>
