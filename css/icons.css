@@ -19,7 +19,6 @@
 
 .iconBox:hover {
   cursor: pointer;
-  background-color: rgb(from var(--dark) r g b / 0.5);
 }
 
 .iconBox:hover::before {
