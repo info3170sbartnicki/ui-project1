@@ -1,15 +1,15 @@
 <div class="container">
-  <div class="section">
-    <h3>Large Buttons</h3>
-    <button type="button" class="btn">Primary Button</button>
+    <div class="section">
+        <h3>Large Buttons</h3>
+        <button type="button" class="btn">Primary Button</button>
 
-    <button type="button" class="btn secondary">Secondary Button</button>
+        <button type="button" class="btn secondary">Secondary Button</button>
 
-    <button type="button" class="btn info">Info Button</button>
+        <button type="button" class="btn info">Info Button</button>
 
-    <div class="html">
-      <div class="divider">HTML</div>
-      <pre>
+        <div class="html">
+            <div class="divider">HTML</div>
+            <pre>
       <code class="language-html">
         &lt;button type="button" class="btn"&gt;
             Primary Button
@@ -24,20 +24,99 @@
         &lt;/button&gt;
       </code>
     </pre>
+            <div class="divider">CSS</div>
+            <pre>
+      <code class="language-css">
+        .btn {
+            display: inline-block;
+            background: transparent;
+            text-transform: uppercase;
+            font-style: normal;
+            font-family: var(--text);
+            font-size: 0.625rem;
+            letter-spacing: 0.3em;
+            color: var(--dark);
+            padding: 18px 80px 20px;
+            transition: all 0.7s ease-out;
+            background: linear-gradient(270deg, var(--dark), var(--dark), var(--main), var(--main));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+            text-decoration: none;
+            margin: 0.625rem;
+            border: 1px solid var(--dark);
+        }
+
+        .btn.secondary {
+            color: var(--light);
+            border: 1px solid var(--accent);
+            background: linear-gradient(270deg, var(--secondary), var(--secondary), var(--accent), var(--accent));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+        }
+
+        .btn.secondary:hover {
+            color: var(--main);
+            border: 1px solid var(--main);
+            background-position: 99% 50%;
+        }
+
+        .btn.info {
+            color: var(--light);
+            border: 1px solid var(--secondary);
+            background: linear-gradient(270deg, var(--light), var(--light), var(--secondary), var(--secondary));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+        }
+
+
+        .btn.info:hover {
+            color: var(--dark);
+            border: 1px solid var(--dark);
+            background-position: 99% 50%;
+        }
+
+          @media (max-width: 768px) {
+                .btn {
+                    padding: 8px 40px 10px;
+                    font-size: 0.4rem;
+                    letter-spacing: 0.2em;
+                    margin: 0.35rem;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .btn {
+                    padding: 12px 60px 14px;
+                    font-size: 0.5rem;
+                    letter-spacing: 0.25em;
+                    margin: 0.5rem;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .btn {
+                    padding: 18px 80px 20px;
+                    font-size: 0.625rem;
+                    letter-spacing: 0.3em;
+                    margin: 0.625rem;
+                }
+            }
+      </code>
+    </pre>
+        </div>
     </div>
-  </div>
 
-  <div class="section">
-    <h3>Medium Buttons</h3>
-    <button type="button" class="btn btn-md">Primary Button</button>
+    <div class="section">
+        <h3>Medium Buttons</h3>
+        <button type="button" class="btn btn-md">Primary Button</button>
 
-    <button type="button" class="btn btn-md secondary">Secondary Button</button>
+        <button type="button" class="btn btn-md secondary">Secondary Button</button>
 
-    <button type="button" class="btn btn-md info">Info Button</button>
+        <button type="button" class="btn btn-md info">Info Button</button>
 
-    <div class="html">
-      <div class="divider">HTML</div>
-      <pre>
+        <div class="html">
+            <div class="divider">HTML</div>
+            <pre>
       <code class="language-html">
         &lt;button type="button" class="btn btn-md"&gt;
             Primary Button
@@ -52,20 +131,103 @@
         &lt;/button&gt;
       </code>
     </pre>
+            <div class="divider">CSS</div>
+            <pre>
+      <code class="language-css">
+        .btn {
+            display: inline-block;
+            background: transparent;
+            text-transform: uppercase;
+            font-style: normal;
+            font-family: var(--text);
+            font-size: 0.625rem;
+            letter-spacing: 0.3em;
+            color: var(--dark);
+            padding: 18px 80px 20px;
+            transition: all 0.7s ease-out;
+            background: linear-gradient(270deg, var(--dark), var(--dark), var(--main), var(--main));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+            text-decoration: none;
+            margin: 0.625rem;
+            border: 1px solid var(--dark);
+        }
+
+        .btn.btn-md {
+            padding: 12px 60px 14px;
+        }
+
+        .btn.secondary {
+            color: var(--light);
+            border: 1px solid var(--accent);
+            background: linear-gradient(270deg, var(--secondary), var(--secondary), var(--accent), var(--accent));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+        }
+
+        .btn.secondary:hover {
+            color: var(--main);
+            border: 1px solid var(--main);
+            background-position: 99% 50%;
+        }
+
+        .btn.info {
+            color: var(--light);
+            border: 1px solid var(--secondary);
+            background: linear-gradient(270deg, var(--light), var(--light), var(--secondary), var(--secondary));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+        }
+
+
+        .btn.info:hover {
+            color: var(--dark);
+            border: 1px solid var(--dark);
+            background-position: 99% 50%;
+        }
+
+          @media (max-width: 768px) {
+                .btn {
+                    padding: 8px 40px 10px;
+                    font-size: 0.4rem;
+                    letter-spacing: 0.2em;
+                    margin: 0.35rem;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .btn {
+                    padding: 12px 60px 14px;
+                    font-size: 0.5rem;
+                    letter-spacing: 0.25em;
+                    margin: 0.5rem;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .btn {
+                    padding: 18px 80px 20px;
+                    font-size: 0.625rem;
+                    letter-spacing: 0.3em;
+                    margin: 0.625rem;
+                }
+            }
+      </code>
+    </pre>
+        </div>
     </div>
-  </div>
 
-  <div class="section">
-    <h3>Small Buttons</h3>
-    <button type="button" class="btn btn-sm">Primary Button</button>
+    <div class="section">
+        <h3>Small Buttons</h3>
+        <button type="button" class="btn btn-sm">Primary Button</button>
 
-    <button type="button" class="btn btn-sm secondary">Secondary Button</button>
+        <button type="button" class="btn btn-sm secondary">Secondary Button</button>
 
-    <button type="button" class="btn btn-sm info">Info Button</button>
+        <button type="button" class="btn btn-sm info">Info Button</button>
 
-    <div class="html">
-      <div class="divider">HTML</div>
-      <pre>
+        <div class="html">
+            <div class="divider">HTML</div>
+            <pre>
       <code class="language-html">
         &lt;button type="button" class="btn btn-sm"&gt;
             Primary Button
@@ -80,6 +242,89 @@
         &lt;/button&gt;
       </code>
     </pre>
+            <div class="divider">CSS</div>
+            <pre>
+      <code class="language-css">
+        .btn {
+            display: inline-block;
+            background: transparent;
+            text-transform: uppercase;
+            font-style: normal;
+            font-family: var(--text);
+            font-size: 0.625rem;
+            letter-spacing: 0.3em;
+            color: var(--dark);
+            padding: 18px 80px 20px;
+            transition: all 0.7s ease-out;
+            background: linear-gradient(270deg, var(--dark), var(--dark), var(--main), var(--main));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+            text-decoration: none;
+            margin: 0.625rem;
+            border: 1px solid var(--dark);
+        }
+
+        .btn.btn-sm {
+            padding: 8px 20px 10px;
+        }
+
+        .btn.secondary {
+            color: var(--light);
+            border: 1px solid var(--accent);
+            background: linear-gradient(270deg, var(--secondary), var(--secondary), var(--accent), var(--accent));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+        }
+
+        .btn.secondary:hover {
+            color: var(--main);
+            border: 1px solid var(--main);
+            background-position: 99% 50%;
+        }
+
+        .btn.info {
+            color: var(--light);
+            border: 1px solid var(--secondary);
+            background: linear-gradient(270deg, var(--light), var(--light), var(--secondary), var(--secondary));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+        }
+
+
+        .btn.info:hover {
+            color: var(--dark);
+            border: 1px solid var(--dark);
+            background-position: 99% 50%;
+        }
+
+          @media (max-width: 768px) {
+                .btn {
+                    padding: 8px 40px 10px;
+                    font-size: 0.4rem;
+                    letter-spacing: 0.2em;
+                    margin: 0.35rem;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .btn {
+                    padding: 12px 60px 14px;
+                    font-size: 0.5rem;
+                    letter-spacing: 0.25em;
+                    margin: 0.5rem;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .btn {
+                    padding: 18px 80px 20px;
+                    font-size: 0.625rem;
+                    letter-spacing: 0.3em;
+                    margin: 0.625rem;
+                }
+            }
+      </code>
+    </pre>
+        </div>
     </div>
-  </div>
 </div>
