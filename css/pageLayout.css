@@ -14,19 +14,20 @@
 }
 
 .web main content td{
-    width: 100;
-    height: 200;
+    width: 50%;
+    height: 100%;
     background-color: var(--secondary);
 }
 
 .contentLeft td{
     width: 25%;
+    height: 100%;
     background-color: var(--main);
 }
 
 .contentRight td{
     width: 25%;
-    height: 200;
+    height: 100%;
     background-color: var(--main);
 }
 
@@ -39,17 +40,17 @@
 }
 
 .mobile main content td{
-    height: 150;
+    height: 50%;
     background-color: var(--secondary);
 }
 
 .contentTop td{
-    height: 75;
+    height: 25%;
     background-color: var(--main);
 }
 
 .contentBottom td{
-    height: 75;
+    height: 25%;
     background-color: var(--main);
 }
 
@@ -75,7 +76,7 @@
 }
 
 .row1 td{
-    height: 100;
+    height: 100%;
     background-color: var(--secondary);
 }
 
@@ -89,7 +90,7 @@
 }
 
 .row2 td{
-    height: 100;
+    height: 100%;
     background-color: var(--main);
 }
 
@@ -103,7 +104,7 @@
 }
 
 .row3 td{
-    height: 100;
+    height: 100%;
     background-color: var(--secondary);
 }
 
@@ -117,7 +118,7 @@
 }
 
 .row4 td{
-    height: 100;
+    height: 100%;
     background-color: var(--main);
 }
 
