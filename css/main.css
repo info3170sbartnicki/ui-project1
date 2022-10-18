@@ -6,7 +6,7 @@
   --secondary: #573280;
   --accent: #23022f;
   --dark: #23252e;
-  --light: #EBEBEB  ;
+  --light: #ebebeb;
   /* Font variables */
   --headers: 'Cinzel Decorative', serif;
   --text: 'Inter Tight', sans-serif;
@@ -22,6 +22,7 @@ body {
   margin: unset;
   height: 100vh;
   font-family: var(--text), sans-serif;
+  line-height: 1.4;
 }
 
 body > nav {
