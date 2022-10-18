@@ -1,37 +1,91 @@
 <div class="section">
+
   <h3>Example</h3>
   <p>
     For styling, use one of the eight context classes (for example,
     .alert-danger). To disable it inline, use the Alert JavaScript plugin.
   </p>
   <div class="cardSection">
-    <div class="alert-danger" style="background-color: #ed9996" role="alert">
-      <div class="card-body">Danger alert example</div>
+    <div class="alert alert-danger" style="background-color: #A11730" role="alert">
+      Danger alert example
     </div>
     <br />
-    <div class="alert-warning" style="background-color: #fece86" role="alert">
-      <div class="card-body">Warning alert example</div>
+    <div class="alert alert-warning" style="background-color: #C66C06" role="alert">
+      Warning alert example
     </div>
-    <br />
-    <div class="alert-succes" style="background-color: #b1d2bb" role="alert">
-      <div class="card-body">Success alert example</div>
+    <br /> 
+    <div class="alert alert-succes" style="background-color: #3D7B46" role="alert">
+      Success alert example
     </div>
 
-    <div class="html">
+    <div class="html/css">
       <div class="divider">HTML</div>
-      <pre>
+        <pre>
           <code class="language-html"> 
-            &lt;div class="alert-danger" role="alert"&gt;
+            &lt;div class="alert alert-danger" role="alert"&gt;
                 Danger alert example
             &lt;/div&gt;
-            &lt;div class="alert-warning" role="alert"&gt;
+            &lt;div class="alert alert-warning" role="alert"&gt;
                 Warning alert example
             &lt;/div&gt;
-            &lt;div class="alert-succes" role="alert"&gt;
+            &lt;div class="alert alert-succes" role="alert"&gt;
                 Success alert example
             &lt;/div&gt;
           </code>
         </pre>
+      </div>
+      <div class="divider">CSS</div>
+      <pre>
+          <code class="language-css"> 
+            .alert-danger,
+            .alert-warning,
+            .alert-succes {
+              padding: 20px;
+              width: 60%;
+              border-radius: 10px;
+            }
+          </code>
+        </pre>
     </div>
+
+</div>
+
+  <h3>Additional content</h3>
+  <p>
+    When creating notifications, you can use additional elements such as headings, 
+    paragraph &lt;p&gt; and horizontal line &lt;hr&gt;.
+  </p>
+
+  <div class="cardSection">
+
+    <div class="alert alert-succes" style="background-color: #3D7B46;" role="alert">
+      <h4 class="card-body-h4">Very well!</h4>
+        <p>You have successfully read the example with additional elements.</p>
+        <hr>
+        <p>If you wanted to add more than a few elements, be sure to use margin utilities.</p>
+    </div>
+      <div class="html/css">
+        <div class="divider">HTML</div>
+          <pre>
+            <code class="language-html"> 
+              &lt;div class="alert alert-succes" style="background-color: #3D7B46" role="alert"&gt;
+                &lt;h4 class="card-body-h4"&gt;Very well!&lt;/h4&gt;
+                &lt;p&gt;You have successfully completed the example with additional elements.&lt;/p&gt;
+                &lt;hr&gt;
+                &lt;p&gt;If you wanted to add more than a few elements, be sure to use margin utilities.&lt;/p&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+          <div class="divider">CSS</div>
+            <pre>
+              <code class="language-css"> 
+                .alert-succes {
+                  padding: 20px;
+                  width: 60%;
+                  border-radius: 10px;
+                }
+              </code>
+            </pre>
+      </div>
   </div>
 </div>
