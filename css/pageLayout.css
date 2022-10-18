@@ -1,0 +1,18 @@
+.page-layout__table {
+    width: 1000px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.yellow-td {
+    background-color: var(--main);
+}
+
+.purple-td {
+    background-color: var(--secondary);
+}
+
+.main-content {
+    padding: 60px 0;
+    width: 60%;
+}
