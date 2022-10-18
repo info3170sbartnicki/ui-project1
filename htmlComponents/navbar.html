@@ -14,7 +14,7 @@
       </nav>
     </header>
   </div>
-  <div class="html">
+  <div class="html/css">
     <div class="divider">HTML</div>
     <pre>
       <code class="language-html"> 
@@ -24,7 +24,7 @@
             &lt;img src=&quot;../img/FenixWing.png&quot; alt=&quot;FenixWing&quot; /&gt;
           &lt;/div&gt;
           &lt;nav&gt;
-            &lt;ul&gt;
+            &lt;ul&gt; 
               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
@@ -33,6 +33,45 @@
           &lt;/nav&gt;
         &lt;/header&gt;
       &lt;/div&gt;
+      </code>
+    </pre>
+    <div class="divider">CSS</div>
+    <pre>
+      <code class="language-css"> 
+        .nav-section header {
+          width: 100%;
+          height: 80px;
+          padding: 0 50px;
+          background-color: var(--secondary);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 2px solid var(--accent);
+        }
+
+        .nav-section ul {
+          list-style: none;
+          display: flex;
+          gap: 20px; 
+        }
+
+        .nav-section a {
+          text-align: center;
+          color: var(--main);
+          font-family: var(--headers);
+          font-size: 20px;
+          text-decoration: none;
+        }
+        
+        .nav-section a:hover {
+          color: var(--light);
+          transition: 0.5s;
+        }
+        
+        .nav-section header img {
+          height: 70px;
+          transform: scale(1.7);
+        }        
       </code>
     </pre>
   </div>
@@ -56,7 +95,7 @@
       </nav>
     </header>
   </div>
-  <div class="html">
+  <div class="html/css">
     <div class="divider">HTML</div>
     <pre>
       <code class="language-html"> 
@@ -75,6 +114,49 @@
           &lt;/nav&gt;
         &lt;/header&gt;
       &lt;/div&gt;
+      </code>
+    </pre>
+    <div class="divider">CSS</div>
+    <pre>
+      <code class="language-css"> 
+        .nav-section header {
+          width: 100%;
+          height: 80px;
+          padding: 0 50px;
+          background-color: var(--secondary);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 2px solid var(--accent);
+        }
+        
+        .nav-section header.reversed {
+          flex-direction: row-reverse;
+        }
+        
+        .nav-section ul {
+          list-style: none;
+          display: flex;
+          gap: 20px; 
+        }
+        
+        .nav-section a {
+          text-align: center;
+          color: var(--main);
+          font-family: var(--headers);
+          font-size: 20px;
+          text-decoration: none;
+        }
+        
+        .nav-section a:hover {
+          color: var(--light);
+          transition: 0.5s;
+        }
+        
+        .nav-section header img {
+          height: 70px;
+          transform: scale(1.7);
+        }        
       </code>
     </pre>
   </div>
