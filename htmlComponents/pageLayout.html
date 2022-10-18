@@ -1,194 +1,170 @@
-<div class="pageLayoutSection">
+<div class="page-layout">
     <p>The page layout is structured slightly differently between mobile and web usage.</p>
     <h1>Website Page Layout</h1>
-    <div class="pageLayoutWeb">
-        <table>
-            <div class="header">
-               <tr>
-                  <td>
-                     <h1>Header/Navigation</h1>
-                  </td>
-               </tr>
-            </div>
-            <div class="page header">
-                <tr>
-                   <td>
-                      <h1>Page Header</h1>
-                   </td>
-                </tr>
-            </div>
-            <div class="contentLeft">
-               <tr>
-                  <td>
-                     <h1>Content</h1>
-                  </td>
-               </tr>
-            </div>
-            <div class="web main content">
-               <td>
-                  <h1>Main Content</h1>
-               </td>
-            </div>
-            <div class="contentRight">
-                <td>
-                   <h1>Content</h1>
-                </td>
-             </div>
-            <div class="footerW">
-               <tr>
-                  <td>
-                     <h1>Footer</h1>
-                  </td>
-               </tr> 
-            </div>
-         </table>
-      </div>
+    <table class="page-layout__table">
+        <tr>
+            <td class="purple-td" colspan="3">
+                <h1>Header/Navigation</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td" colspan="3">
+                <h1>Page Header</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h1>Content</h1>
+            </td>
+            <td class="purple-td main-content">
+                <h1>Main Content</h1>
+            </td>
+            <td class="yellow-td">
+                <h1>Content</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="purple-td" colspan="3">
+                <h1>Footer</h1>
+            </td>
+        </tr>
+    </table>
     <h1>Mobile Page Layout</h1>
-    <div class="pageLayoutMobile">
-        <table>
-            <div class="headerM">
-               <tr>
-                  <td>
-                     <h1>Header/Navigation</h1>
-                  </td>
-               </tr>
-            </div>
-            <div class="pageHeaderM">
-                <tr>
-                   <td>
-                      <h1>Page Header</h1>
-                   </td>
-                </tr>
-            </div>
-            <div class="contentTop">
-               <tr valign = "top">
-                  <td>
-                     <h1>Content</h1>
-                  </td>
-               </tr>
-            </div>  
-            <div class="mobile main content">
-                <tr>
-                   <td>
-                      <h1>Main content</h1>
-                   </td>
-                </tr>
-            </div>
-            <div class="contentBottom">
-               <tr>
-                  <td>
-                     <h1>Content</h1>
-                  </td>
-               </tr>
-            </div>
-            <div class="footerM">
-               <tr>
-                  <td>
-                     <h1>Footer</h1>
-                  </td>
-               </tr>
-            </div>
-         </table>
-      </div> 
+    <table class="page-layout__table">
+        <tr>
+            <td class="purple-td">
+                <h1>Header/Navigation</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h1>Page Header</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h1>Content</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="purple-td">
+                <h1>Main content</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h1>Content</h1>
+            </td>
+        </tr>
+        <tr class="purple-td">
+            <td>
+                <h1>Footer</h1>
+            </td>
+        </tr>
+    </table>
 </div>
 
-<div class="chartLayoutSection">    
-   <p>The chart layout will also be presented slightly differently between web/mobile.</p> 
-   <p>For the mobile layout, a scroll function will be implemented to scroll through the charts.</p>
+<div class="chartLayoutSection">
+    <p>The chart layout will also be presented slightly differently between web/mobile.</p>
+    <p>For the mobile layout, a scroll function will be implemented to scroll through the charts.</p>
     <h1>Website Chart Layout</h1>
-    <div class="pageLayoutChartWeb">
-        <table> 
-            <div class="headerCW">
-                <tr>
-                   <td>
-                      <h1>Header/Navigation</h1>
-                   </td>
-                </tr>
-                </div>
-                <div class="pageHeaderCW">
-                    <tr>
-                       <td>
-                          <h1>Page Header</h1>
-                       </td>
-                    </tr>
-                  </div>
-            <div class="row1">
-                <tr>
-                    <td>
-                        <h2>Chart 1</h2>
-                        <h2>Chart 2</h2>
-                    </td>
-                </tr>
-            </div>
-            <div class="row2">
-                <tr>
-                    <td>
-                        <h2>Chart 3</h2>
-                        <h2>Chart 4</h2>
-                    </td>
-                </tr>
-            </div>
-            <div class="row3">
-                <tr>
-                    <td>
-                        <h2>Chart 5</h2>
-                        <h2>Chart 6</h2>
-                    </td>
-                </tr>
-            </div>
-            <div class="row4">
-                <tr>
-                    <td>
-                        <h2>Chart 7</h2>
-                    </td>
-                </tr>
-            </div>
-            <div class="footerCW">
-                <tr>
-                   <td>
-                        <h1>Footer</h1>
-                   </td>
-                </tr>
-            </div>
-         </table>
-      </div>    
+    <table class="page-layout__table">
+        <tr>
+            <td colspan="2" class="purple-td">
+                <h1>Header/Navigation</h1>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="yellow-td">
+                <h1>Page Header</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="purple-td">
+                <h2>Chart 1</h2>
+            </td>
+            <td class="purple-td">
+                <h2>Chart 2</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h2>Chart 3</h2>
+            </td>
+            <td class="yellow-td">
+                <h2>Chart 4</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="purple-td">
+                <h2>Chart 5</h2>
+            </td>
+            <td class="purple-td">
+                <h2>Chart 6</h2>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="yellow-td">
+                <h2>Chart 7</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="purple-td" colspan="2">
+                <h1>Footer</h1>
+            </td>
+        </tr>
+    </table>
     <h1>Mobile Chart Layout</h1>
-    <div class="pageLayoutChartMobile">
-        <table> 
-            <div class="headerM">
-                <tr>
-                   <td>
-                      <h1>Header/Navigation</h1>
-                   </td>
-                </tr>
-            </div>
-            <div class="pageHeaderM">
-               <tr>
-                  <td>
-                     <h1>Page Header</h1>
-                  </td>
-               </tr>
-            </div>
-            <div class="column">
-               <tr>
-                  <td>
-                     <h2>Chart 1</h2>
-                     <h2>Chart 2</h2>
-                     <h2>Chart 3</h2>
-                     <h2>Chart 4</h2>
-                     <h2>Chart 5</h2>
-                     <h2>Chart 6</h2>
-                     <h2>Chart 7</h2>
-                  </td>
-               </tr>
-            </div>
-            <div class="footerM">
-                <tr>
-                   <td>
-                     <h1>Footer</h1>
-                   </td>
-                </tr>
-            </div>
-        </table>
-      </div>
+    <table class="page-layout__table">
+        <tr>
+            <td class="purple-td">
+                <h1>Header/Navigation</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h1>Page Header</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h2>Chart 1</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h2>Chart 2</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h2>Chart 3</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h2>Chart 4</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h2>Chart 5</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h2>Chart 6</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="yellow-td">
+                <h2>Chart 7</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="purple-td">
+                <h1>Footer</h1>
+            </td>
+        </tr>
+    </table>
 </div>

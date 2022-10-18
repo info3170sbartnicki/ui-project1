@@ -1,131 +1,18 @@
-.header td {
-    column-span: 3;
-    background-color: var(--secondary);
+.page-layout__table {
+    width: 1000px;
+    text-align: center;
+    vertical-align: center;
 }
 
-.page header td{
-    column-span: 3;
+.yellow-td {
     background-color: var(--main);
 }
 
-.footerW td{
-    column-span: 3;
+.purple-td {
     background-color: var(--secondary);
 }
 
-.web main content td{
-    width: 50%;
-    height: 100%;
-    background-color: var(--secondary);
-}
-
-.contentLeft td{
-    width: 25%;
-    height: 100%;
-    background-color: var(--main);
-}
-
-.contentRight td{
-    width: 25%;
-    height: 100%;
-    background-color: var(--main);
-}
-
-.headerM td{
-    background-color: var(--secondary);
-}
-
-.pageHeaderM td{
-    background-color: var(--main);
-}
-
-.mobile main content td{
-    height: 50%;
-    background-color: var(--secondary);
-}
-
-.contentTop td{
-    height: 25%;
-    background-color: var(--main);
-}
-
-.contentBottom td{
-    height: 25%;
-    background-color: var(--main);
-}
-
-.footerM td{
-    background-color: var(--secondary);
-}
-
-.headerCW td{
-    background-color: var(--secondary);
-}
-
-.pageHeaderCW td{
-    background-color: var(--main);
-}
-
-.row1{
-    display: table;
-}
-
-
-.row1 h2{
-    display: table-cell;
-}
-
-.row1 td{
-    height: 100%;
-    background-color: var(--secondary);
-}
-
-.row2{
-    display: table;
-}
-
-
-.row2 h2{
-    display: table-cell;
-}
-
-.row2 td{
-    height: 100%;
-    background-color: var(--main);
-}
-
-.row3{
-    display: table;
-}
-
-
-.row3 h2{
-    display: table-cell;
-}
-
-.row3 td{
-    height: 100%;
-    background-color: var(--secondary);
-}
-
-.row4{
-    display: table;
-}
-
-
-.row4 h2{
-    display: table-cell;
-}
-
-.row4 td{
-    height: 100%;
-    background-color: var(--main);
-}
-
-.footerCW td{
-    background-color: var(--secondary);
-}
-
-.column td{
-    background-color: var(--main)
+.main-content {
+    padding: 60px 0;
+    width: 60%;
 }
