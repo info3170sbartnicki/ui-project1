@@ -9,10 +9,10 @@
     </ul>
     <p>
       To add actual pages to the menu, replace "#" in the list href with the
-      link and rename.
+      link and rename. 
     </p>
   </div>
-  <div class="html">
+  <div class="html/css">
     <div class="divider">HTML</div>
     <pre>
       <code class="language-html"> 
@@ -24,6 +24,39 @@
                 &lt;a href="#"&gt;Page 4&lt;/a&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
+      </code>
+    </pre>
+    <div class="divider">CSS</div>
+    <pre>
+      <code class="language-css"> 
+        ul.breadcrumb {
+          padding: 10px 16px;
+          list-style: none;
+          background-color: var(--secondary);
+          border-radius: 10px;
+        }
+        
+        ul.breadcrumb li {
+          display: inline;
+          font-size: 18px;
+        } 
+        
+        ul.breadcrumb li + li:before {
+          padding: 8px;
+          color: var(--light);
+          content: '>';
+        }
+        
+        ul.breadcrumb li a {
+          color: var(--main);
+          text-decoration: none;
+        }
+        
+        ul.breadcrumb li a:hover {
+          color: var(--light);
+          text-decoration: underline;
+          transition: transform 0.2s;
+        }
       </code>
     </pre>
   </div>
