@@ -16,17 +16,30 @@
 
 <div class="heading-text">
   Our secondary font is Inter Tight, this is the typeface that will be used for
-  body text, forms, buttons, and all other elements.
+  body text, forms, buttons, and all other elements. Below are the following
+  headings for this font.
 </div>
 <br />
 <div class="cardSection">
   <div class="headings">
     <h1>Heading 1</h1>
+    <hr />
+    <p>2em | bold | Cinzel Decorative</p>
     <h2>Heading 2</h2>
+    <hr />
+    <p>1.5em | bold | Cinzel Decorative</p>
     <h3>Heading 3</h3>
+    <hr />
+    <p>1.17em | bold | Cinzel Decorative</p>
     <h4>Heading 4</h4>
+    <hr />
+    <p>1em | bold | Cinzel Decorative</p>
     <h5>Heading 5</h5>
+    <hr />
+    <p>.83em | bold | Cinzel Decorative</p>
     <h6>Heading 6</h6>
+    <hr />
+    <p>.67em | bold | Cinzel Decorative</p>
   </div>
   <div class="html">
     <div class="divider">HTML</div>
@@ -41,7 +54,20 @@
         </code>
     </pre>
   </div>
+  <div class="divider">CSS</div>
+  <pre>
+      <code class="language-css"> 
+        .headings {
+          font-family: 'Cinzel Decorative', sans-serif;
+          font-size: 20px;
+          transition: 0.3s;
+          width: 40%;
+          border-radius: 5px;
+        }
+      </code>
+  </pre>
 </div>
+
 <br />
 <div class="cardSection">
   <h2>Text Styling Examples</h2>
@@ -114,4 +140,40 @@
         </code>
     </pre>
   </div>
+
+  <div class="html">
+    <div class="divider">CSS</div>
+    <pre>
+        <code class="language-css"> 
+          .paragraph-desc {
+            font-size: 16px;
+            font-family: 'Inter Tight', sans-serif;
+          }
+        </code>
+    </pre>
+  </div>
+</div>
+
+<br />
+
+<div class="cardSection">
+  <h3>Styling Elements</h3>
+
+  Buttons: <br />
+  <button type="button" class="btn">Button Element</button> <br />
+  Font Size: 0.5rem | Letter Spacing: 0.25rem | Margin: 0.5 rem <br />
+  <br />
+  HTML and CSS code found in respective components pages.
+</div>
+<br />
+<div class="cardSection">
+  <h3>Alerts: <br /></h3>
+  <div class="alert-danger" style="background-color: #a11730" role="alert">
+    <div class="card-body">Alert example</div>
+  </div>
+  <br />
+  Font Size: 16px | Font-family: 'Inter Tight', sans-serif | inherited from
+  :root CSS selector<br />
+  <br />
+  HTML and CSS code found in respective components pages.
 </div>
