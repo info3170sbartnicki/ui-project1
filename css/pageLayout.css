@@ -8,7 +8,7 @@
     background-color: var(--main);
 }
 
-.footer td{
+.footerW td{
     column-span: 3;
     background-color: var(--secondary);
 }

@@ -1,5 +1,5 @@
 let pageLayout = {
-  title: 'pageLayout',
+  title: 'Page Layout',
   description: "Overview of the general dashboard layout for web and mobile, as well as chart layouts for web and mobile.",
   html: "",
   htmlSource: "./htmlComponents/pageLayout.html",
