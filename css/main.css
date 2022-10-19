@@ -70,6 +70,7 @@ main > header {
   align-items: center;
   gap: 30px;
   box-shadow: 0px 5px 15px #23022f;
+  z-index: 2;
 }
 
 main > header img {
