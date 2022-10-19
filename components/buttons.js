@@ -1,6 +1,6 @@
 let buttons = {
   title: 'Buttons',
-  description: "Button's description",
+  description: "The library includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.",
   html: '',
   htmlSource: './htmlComponents/buttons.html',
 };
