@@ -17,7 +17,7 @@ form {
   margin-top: 10px;
   background-color: var(--accent);
   color: var(--light);
-  border: 1px solid var(--light);
+  border-bottom: 1px solid var(--light);
   padding: 10px;
   /* border-radius: 10px; */
 }
