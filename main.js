@@ -12,6 +12,7 @@ import icons from './components/icons.js';
 import forms from './components/forms.js';
 import footer from './components/footer.js';
 import dataVisualization from './components/dataVisualization.js';
+import areaChart from './charts/areaChart.js';
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
 let components = [
@@ -43,4 +44,25 @@ listTotal.forEach((item, index) => {
     `;
     hljs.highlightAll(); // highlighting html markup
   });
+});
+
+// PROJECT 2 SETUP
+// You only need to do 3 things here to make your chart work
+// 1. Import your chart at the top of the file
+// 2. Add a name of chart wrapper to chartWrappers array (it will create div with such ID)
+// 3. Call the function that draws your chart.
+let dashboard = document.querySelector('#dashboard');
+let chartsWrappers = ['area_chart']; //add the name of your chart container to this array
+
+dashboard.addEventListener('click', () => {
+  componentBox.innerHTML = ``;
+  //creating wrapper div for each chart
+  chartsWrappers.forEach((chart) => {
+    let wrapper = document.createElement('div');
+    wrapper.id = chart;
+    componentBox.appendChild(wrapper);
+  });
+
+  //call your chart function here
+  areaChart();
 });
