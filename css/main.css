@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap");
 
 :root {
   /* Color variables */
   --main: #ffa306;
   --secondary: #573280;
   --accent: #23022f;
-  --dark: #23252e;
+  /*--dark: #23252e; */
   --light: #ebebeb;
   /* Font variables */
-  --headers: 'Cinzel Decorative', serif;
-  --text: 'Inter Tight', sans-serif;
+  --headers: "Cinzel Decorative", serif;
+  --text: "Inter Tight", sans-serif;
 }
 
 * {

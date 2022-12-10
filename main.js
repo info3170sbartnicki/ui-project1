@@ -13,6 +13,9 @@ import forms from './components/forms.js';
 import footer from './components/footer.js';
 import dataVisualization from './components/dataVisualization.js';
 import areaChart from './charts/areaChart.js';
+import chart2 from "./charts/chart2.js";
+import chart4part1 from "./charts/chart4part1.js";
+import chart4part2 from "./charts/chart4part2.js";
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
 let components = [
@@ -52,7 +55,7 @@ listTotal.forEach((item, index) => {
 // 2. Add a name of chart wrapper to chartWrappers array (it will create div with such ID)
 // 3. Call the function that draws your chart.
 let dashboard = document.querySelector('#dashboard');
-let chartsWrappers = ['area_chart']; //add the name of your chart container to this array
+let chartsWrappers = ["chart4part2", "chart4part1", "chart2", "area_chart"]; //add the name of your chart container to this array
 
 dashboard.addEventListener('click', () => {
   componentBox.innerHTML = ``;
@@ -64,5 +67,9 @@ dashboard.addEventListener('click', () => {
   });
 
   //call your chart function here
+  chart2();
+  chart4part1();
+  chart4part2();
+
   areaChart();
 });
