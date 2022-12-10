@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Single Value Gauge Chart</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: "Inter Tight", sans-serif;
+    }
+
+    .arc text {
+      font-size: 16px;
+    }
+
+    .arc path {
+      stroke: #fff;
+    }
+
+    .gauge text {
+      font-size: 32px;
+    }
+  </style>
+</head>
+<body>
+  Number of Loyal Customers:
+  <svg width="400" height="400"></svg>
+  <script>
+    // Define the data
+    var data = [100, 25];
+
+    // Define the margin, width, and height
+    var margin = {top: 20, right: 20, bottom: 30, left: 40};
+    var width = +d3.select("svg").attr("width") - margin.left - margin.right;
+    var height = +d3.select("svg").attr("height") - margin.top - margin.bottom;
+
+    // Define the radius and color scale
+    var radius = Math.min(width, height) / 2;
+    var color = d3.scaleOrdinal().range(["#FFA306", "#EBEBEB"]);
+
+    // Define the pie layout and arc generator
+    var pie = d3.pie().value(function(d) { return d; });
+    var arc = d3.arc().outerRadius(radius - 10).innerRadius(radius - 70);
+
+    // Create the SVG element
+    var svg = d3.select("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    // Bind the data to the pie layout
+    var arcs = svg.selectAll(".arc")
+                  .data(pie(data))
+                  .enter().append("g")
+                  .attr("class", "arc");
+
+    // Create the donut segments
+    arcs.append("path")
+        .attr("d", arc)
+        .style("fill", function(d) { return color(d.data); });
+
+    // Add the text "75" in the middle of the chart
+    svg.append("text")
+       .attr("dy", ".35em")
+       .style("text-anchor", "middle")
+       .attr("class", "gauge")
+       .text("75");
+
+      // Add the label below the chart
+    svg.append("text")
+       .attr("x", width / 2)
+       .attr("y", height + 20)
+       .attr("text-anchor", "middle")
+       .text("Number of Loyal Customers");
+  </script>
+</body>
+</html>
