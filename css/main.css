@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap");
 
 :root {
   /* Color variables */
@@ -8,8 +8,14 @@
   --dark: #23252e;
   --light: #ebebeb;
   /* Font variables */
-  --headers: 'Cinzel Decorative', serif;
-  --text: 'Inter Tight', sans-serif;
+  --headers: "Cinzel Decorative", serif;
+  --text: "Inter Tight", sans-serif;
+}
+
+/*Scattern chart*/
+.selected {
+  stroke: black;
+  stroke-width: 5px;
 }
 
 * {
@@ -87,11 +93,11 @@ main > header img {
 }
 
 svg {
-  background-color: var(--dark);
+  color: var(--dark);
 }
 
 .axis {
-  color: var(--light);
+  color: var(--dark);
 }
 
 #hist_svg {
