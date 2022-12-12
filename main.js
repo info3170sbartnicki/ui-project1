@@ -1,22 +1,23 @@
 //First, we're importing all our components
-import card from './components/card.js';
-import buttons from './components/buttons.js';
-import alerts from './components/alerts.js';
-import breadcrumbs from './components/breadcrumbs.js';
-import grid from './components/grid.js';
-import navBar from './components/navBar.js';
-import pageLayouts from './components/pageLayouts.js';
-import colors from './components/colors.js';
-import typography from './components/typography.js';
-import icons from './components/icons.js';
-import forms from './components/forms.js';
-import footer from './components/footer.js';
-import dataVisualization from './components/dataVisualization.js';
+import card from "./components/card.js";
+import buttons from "./components/buttons.js";
+import alerts from "./components/alerts.js";
+import breadcrumbs from "./components/breadcrumbs.js";
+import grid from "./components/grid.js";
+import navBar from "./components/navBar.js";
+import pageLayouts from "./components/pageLayouts.js";
+import colors from "./components/colors.js";
+import typography from "./components/typography.js";
+import icons from "./components/icons.js";
+import forms from "./components/forms.js";
+import footer from "./components/footer.js";
+import dataVisualization from "./components/dataVisualization.js";
 
-import areaChart from './charts/areaChart.js';
-import histogram from './charts/histogramChart3.js';
+import histogram from "./charts/histogramChart3.js";
+import scatterPlotChart4 from "./charts/scatterPlotChart4.js";
+import pieChart2 from "./charts/pieChart2.js";
 
-let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
+let componentBox = document.getElementById("componentBox"); // Inside of it we'll display current component
 let components = [
   typography,
   colors,
@@ -32,12 +33,12 @@ let components = [
   icons,
   navBar,
 ]; // Array of our components, please import yours and then add here
-let getStartedList = document.getElementById('getStarted').children; // Array of <li> elements under 'Get Started'
-let compList = document.getElementById('componentList').children; // Array of <li> elements under 'Components'
+let getStartedList = document.getElementById("getStarted").children; // Array of <li> elements under 'Get Started'
+let compList = document.getElementById("componentList").children; // Array of <li> elements under 'Components'
 let listTotal = [...getStartedList, ...compList]; // Combined Get started list and components list
 
 listTotal.forEach((item, index) => {
-  item.addEventListener('click', () => {
+  item.addEventListener("click", () => {
     componentBox.innerHTML = `
     <h1>${components[index].title}</h1>
     <hr>
@@ -53,19 +54,19 @@ listTotal.forEach((item, index) => {
 // 1. Import your chart at the top of the file
 // 2. Add a name of chart wrapper to chartWrappers array (it will create div with such ID)
 // 3. Call the function that draws your chart.
-let dashboard = document.querySelector('#dashboard');
-let chartsWrappers = ['area_chart', 'histogram']; //add the name of your chart container to this array
+let dashboard = document.querySelector("#dashboard");
+let chartsWrappers = ["pieChart2", "histogram", "scatterPlotChart4"]; //add the name of your chart container to this array
 
-dashboard.addEventListener('click', () => {
+dashboard.addEventListener("click", () => {
   componentBox.innerHTML = ``;
   //creating wrapper div for each chart
   chartsWrappers.forEach((chart) => {
-    let wrapper = document.createElement('div');
+    let wrapper = document.createElement("div");
     wrapper.id = chart;
     componentBox.appendChild(wrapper);
   });
 
-  //call your chart function here
-  areaChart();
+  pieChart2();
   histogram();
+  scatterPlotChart4();
 });
