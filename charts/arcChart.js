@@ -14,6 +14,7 @@ function draw(domNode) {
     .attr("width", width)
     .attr("height", height)
     .append("g")
+    .style('color', 'var(--light)')
     .attr("transform", `translate(${outerRadius},${outerRadius})`);
 
   var arc = d3.arc()
