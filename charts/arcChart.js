@@ -25,7 +25,6 @@ function draw(domNode) {
   svg.append("path")
     .attr("class", "arc-background")
     .attr("d", arc);
-    .style('color', 'var(--light)')
 
   var progress = .67;
   var endAngle = (progress * (4 / 3) * Math.PI) + ((-2 / 3) * Math.PI)
