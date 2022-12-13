@@ -3,7 +3,7 @@ function draw(domNode) {
   
   document.getElementById('arc-chart').innerHTML = '';
   
-  var width = 360;
+  var width = 720;
   var height = 360;
   
   var outerRadius = Math.min(width/2, (1/5) *height);
