@@ -1,4 +1,11 @@
 export default function gaugeChart() {
+    
+    //title
+    let title = d3.select("#gaugeChart").append("div").attr("id", "title");
+    title._groups[0][0].innerHTML = `
+    <h3>Total Number of Flight Distance</h2>
+    `;
+    
     // set the dimensions and margins of the graph
     var width = 400;
     var height = 100;
