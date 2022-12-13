@@ -38,6 +38,7 @@ function draw(domNode) {
     .attr('text-anchor', 'middle')
     .attr('y', -10)
     .attr('id', 't1')
+    .style('color', 'var(--light)') 
     .attr('font-size', 10)
     .text('40');
 
