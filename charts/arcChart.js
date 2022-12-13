@@ -1,5 +1,5 @@
 export default function arcChart() {
-ffunction draw(domNode) {
+function draw(domNode) {
   
   document.getElementById('arc-chart').innerHTML = '';
   
