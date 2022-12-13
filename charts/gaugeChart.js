@@ -54,8 +54,7 @@ export default function gaugeChart() {
       .scale(x)
 
     svg.append("g")
-      .attr("transform", "translate(0," + (height - 2 * margin) + ")")
-      .style('color', 'var(--light)') 
+      .attr("transform", "translate(0," + (height - 2 * margin) + ")") 
       .call(xAxis);
 
     // Animate the gauge
