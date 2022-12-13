@@ -16,6 +16,11 @@ export default function gaugeChart() {
 
     d3.csv("./data/customer_satisfaction.csv").then( function(data) {
         
+          for (let i = 0; i < data.length; i++) {
+         var sum = data[i]['Flight Distance'];
+         console.log(d3.count(sum))
+          //108132 distance travelled
+      }
                   
     });
 
