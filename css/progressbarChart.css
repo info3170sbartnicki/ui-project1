@@ -1,0 +1,22 @@
+.widget {
+    height: 360vh;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .progress-bar {
+    fill: #FFA306;
+  }
+  
+  .progress-bar-bg {
+    fill: #573280;
+  }
+  
+  .progress-label {
+    fill: red;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    text-anchor: middle;
+   
+  }
