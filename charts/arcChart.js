@@ -6,7 +6,7 @@ function draw(domNode) {
   var width = window.innerWidth;
   var height = window.innerHeight;
   
-  var outerRadius = Math.min(width/2, (1/5) *height);
+  var outerRadius = Math.min(width/2, (1/15) *height);
   var innerRadius = outerRadius *.75;
   
   var svg = d3.select("#arc-chart")
