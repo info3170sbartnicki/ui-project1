@@ -14,7 +14,6 @@ function draw(domNode) {
     .attr("width", width)
     .attr("height", height)
     .append("g")
-    .style('color', 'var(--light)')
     .attr("transform", `translate(${outerRadius},${outerRadius})`);
 
   var arc = d3.arc()
@@ -26,6 +25,7 @@ function draw(domNode) {
   svg.append("path")
     .attr("class", "arc-background")
     .attr("d", arc);
+    .style('color', 'var(--light)')
 
   var progress = .67;
   var endAngle = (progress * (4 / 3) * Math.PI) + ((-2 / 3) * Math.PI)
@@ -39,7 +39,6 @@ function draw(domNode) {
     .attr('text-anchor', 'middle')
     .attr('y', -10)
     .attr('id', 't1')
-    .style('color', 'var(--light)') 
     .attr('font-size', 10)
     .text('40');
 
