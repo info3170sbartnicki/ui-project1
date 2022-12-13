@@ -56,7 +56,7 @@ listTotal.forEach((item, index) => {
 // 2. Add a name of chart wrapper to chartWrappers array (it will create div with such ID)
 // 3. Call the function that draws your chart.
 let dashboard = document.querySelector('#dashboard');
-let chartsWrappers = ['area_chart', 'histogram', 'gauge-chart', 'widget']; //add the name of your chart container to this array
+let chartsWrappers = ['area_chart', 'histogram', 'gauge-chart', 'arc-chart']; //add the name of your chart container to this array
 
 dashboard.addEventListener('click', () => {
   componentBox.innerHTML = ``;
@@ -71,5 +71,5 @@ dashboard.addEventListener('click', () => {
   areaChart();
   histogram();
   gaugeChart();
-  progressbarChart();
+  arcChart();
 });
