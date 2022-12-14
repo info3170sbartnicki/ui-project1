@@ -15,7 +15,7 @@ export default function gaugeChart() {
     var finalValue = 108132;
 
     //Retrieve Data from CSV
-    d3.csv("./data/customer_satisfaction.csv").then( function(data) {
+    d3.csv("./charts/data/customer_satisfaction.csv").then( function(data) {
       
       //Find the sum of flight distance and save to a variable
       var sum = d3.sum(data,function (d) { return d['Flight Distance']; })
