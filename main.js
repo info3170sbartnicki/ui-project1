@@ -16,7 +16,7 @@ import dataVisualization from './components/dataVisualization.js';
 import areaChart from './charts/areaChart.js';
 import histogram from './charts/histogramChart3.js';
 import gaugeChart from './charts/gaugeChart.js';
-import arcChart from './charts/arcChart.js';
+//import arcChart from './charts/arcChart.js';
 import radialChart from './charts/radial.js';
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
@@ -57,7 +57,7 @@ listTotal.forEach((item, index) => {
 // 2. Add a name of chart wrapper to chartWrappers array (it will create div with such ID)
 // 3. Call the function that draws your chart.
 let dashboard = document.querySelector('#dashboard');
-let chartsWrappers = ['area_chart', 'histogram', 'gauge-chart', 'arc-chart', 'radial-chart']; //add the name of your chart container to this array
+let chartsWrappers = ['area_chart', 'histogram', 'gauge-chart', 'radial-chart']; //add the name of your chart container to this array
 
 dashboard.addEventListener('click', () => {
   componentBox.innerHTML = ``;
@@ -72,6 +72,5 @@ dashboard.addEventListener('click', () => {
   areaChart();
   histogram();
   gaugeChart();
-  arcChart();
   radialChart();
 });
