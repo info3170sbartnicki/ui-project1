@@ -14,15 +14,12 @@ export default function gaugeChart() {
     // The desired final value of the gauge
     var finalValue = 108132;
 
+    //Retrieve Data from CSV
     d3.csv("./data/customer_satisfaction.csv").then( function(data) {
-        
-          for (let i = 0; i < data.length; i++) {
-         var sum = data[i]['Flight Distance'];
-         console.log(d3.count(sum))
-          //108132 distance travelled
-      }
-                  
-    });
+      
+      //Find the sum of flight distance and save to a variable
+      var sum = d3.sum(data,function (d) { return d['Flight Distance']; })
+      console.log(sum)
 
 
     // append the svg object to the body of the page
@@ -68,8 +65,8 @@ export default function gaugeChart() {
     valueIndicator
       .transition()
       .duration(2000)
-      .attr("width", x(finalValue))
+      .attr("width", x(sum))
 
-
+    });
 
 }
