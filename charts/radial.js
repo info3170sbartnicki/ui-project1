@@ -1,6 +1,6 @@
 export default function radialChart() {
-
-var wrapper = document.getElementById('progress');
+document.getElementById('radial-chart').innerHTML = '';
+//var wrapper = document.getElementById('progress');
 var start = 0;
 var end = parseFloat("40");
 
@@ -23,7 +23,7 @@ var step = end < start ? -0.01 : 0.01;
 
 
 //retrieve data
-d3.csv("./charts/data/customer_satisfaction.csv").then( function(data) {
+d3.csv("./data/customer_satisfaction.csv").then( function(data) {
 
     var sum = d3.count(data,function (d) { return d['Customer Type']; })
       console.log(sum)
@@ -42,7 +42,7 @@ var circle = d3.arc()
   .outerRadius(radius - border);
 
 //setup SVG wrapper
-var svg = d3.select(wrapper)
+var svg = d3.select('#radial-chart')
   .append('svg')
   .attr('width', boxSize)
   .attr('height', boxSize);
