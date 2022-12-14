@@ -94,6 +94,10 @@ svg {
   color: var(--light);
 }
 
-#hist_svg {
+#histogram {
   max-width: 500px;
+}
+
+svg {
+  border-radius: 5px;
 }

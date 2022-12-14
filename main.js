@@ -13,7 +13,6 @@ import forms from './components/forms.js';
 import footer from './components/footer.js';
 import dataVisualization from './components/dataVisualization.js';
 
-import areaChart from './charts/areaChart.js';
 import histogram from './charts/histogramChart3.js';
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
@@ -66,6 +65,5 @@ dashboard.addEventListener('click', () => {
   });
 
   //call your chart function here
-  areaChart();
   histogram();
 });
