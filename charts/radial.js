@@ -23,7 +23,7 @@ var step = end < start ? -0.01 : 0.01;
 
 
 //retrieve data
-d3.csv("./data/customer_satisfaction.csv").then( function(data) {
+d3.csv("./charts/data/customer_satisfaction.csv").then( function(data) {
 
     var sum = d3.count(data,function (d) { return d['Customer Type']; })
       console.log(sum)
