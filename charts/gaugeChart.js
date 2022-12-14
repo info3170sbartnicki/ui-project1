@@ -14,16 +14,19 @@ export default function gaugeChart() {
     // The desired final value of the gauge
     var finalValue = 108132;
 
-
-    //Retrieve Data from CSV
     d3.csv("./data/customer_satisfaction.csv").then( function(data) {
-      
-      //Find the sum of flight distance and save to a variable
-      var sum = d3.sum(data,function (d) { return d['Flight Distance']; })
-      console.log(sum)
+        
+          for (let i = 0; i < data.length; i++) {
+         var sum = data[i]['Flight Distance'];
+         console.log(d3.count(sum))
+          //108132 distance travelled
+      }
+                  
+    });
+
 
     // append the svg object to the body of the page
-    var svg = d3.select("#chart")
+    var svg = d3.select("#gauge-chart")
       .append("svg")
         .attr("width", width)
         .attr("height", height)
@@ -43,7 +46,6 @@ export default function gaugeChart() {
       .attr("width", x(maxValue))
       .attr("height", height - 2 * margin)
       .style("fill", "#573280")
-      
 
     // Add a value indicator
     var valueIndicator = svg.append("rect")
@@ -56,19 +58,17 @@ export default function gaugeChart() {
     // Add a scale
     var xAxis = d3.axisBottom()
       .scale(x)
-      
 
     svg.append("g")
       .attr("transform", "translate(0," + (height - 2 * margin) + ")")
+      .style('color', 'var(--light)') 
       .call(xAxis);
 
     // Animate the gauge
     valueIndicator
       .transition()
       .duration(2000)
-      .attr("width", x(sum))
-    
-    });
+      .attr("width", x(finalValue))
 
 
 
