@@ -75,8 +75,13 @@ var numberText = track.append('text')
     
      svg.append("text").attr('class', 'text')
 	.text("Number of Loyal Customers")
+	.attr('font-family', 'var(--headers)')
+      	.attr('fill', 'var(--light)')
 	.attr("x", 50)
+	.attr('text-anchor', 'middle');
 	.attr("y", 325);
+	
+           
 
 function update(progress) {
   //update position of endAngle
