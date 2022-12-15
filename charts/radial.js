@@ -54,7 +54,7 @@ var g = svg.append('g')
 //Setup track
 var track = g.append('g').attr('class', 'radial-progress');
 track.append('path')
-  //.attr('class', 'radial-progress__background')
+  .attr('class', 'radial-progress__background')
   .attr('fill', colours.track)
   .attr('stroke', colours.stroke)
   .attr('stroke-width', strokeSpacing + 'px')
@@ -62,7 +62,7 @@ track.append('path')
 
 //Add colour fill
 var value = track.append('path')
-  //.attr('class', 'radial-progress__value')
+  .attr('class', 'radial-progress__value')
   .attr('fill', colours.fill)
   .attr('stroke', colours.stroke)
   .attr('stroke-width', strokeSpacing + 'px');
@@ -72,7 +72,8 @@ var numberText = track.append('text')
   .attr('class', 'radial-progress__text')
   .attr('fill', colours.text)
   .attr('text-anchor', 'middle')
-  .attr('dy', '2rem');
+  .style("font-size", "106px")
+  .attr('dy', '.5rem');
 
 function update(progress) {
   //update position of endAngle
