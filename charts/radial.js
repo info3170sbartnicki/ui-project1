@@ -43,7 +43,7 @@ var circle = d3.arc()
 var svg = d3.select(container)
   .append('svg')
   .attr('width', boxSize)
-  .attr('height', 250);
+  .attr('height', 300);
 
 // Group container
 var g = svg.append('g')
@@ -73,7 +73,7 @@ var numberText = track.append('text')
   .style("font-size", "50px")
   .attr('dy', '.5rem');
     
-     svg.append("text")
+     svg.append("text").attr('class', 'text')
 	.text("Number of Loyal Customers")
 	.attr("x", 15)
 	.attr("y", 225);
