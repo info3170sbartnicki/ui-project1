@@ -37,7 +37,7 @@ var step = end < beginning ? -0.01 : 0.01;
 
 //Create the circle
 var circle = d3.arc()
-  .beginningAngle(0)
+  .startAngle(0)
   .innerRadius(radius)
   .outerRadius(radius - border);
 
