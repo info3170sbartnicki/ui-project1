@@ -14,8 +14,13 @@ import footer from './components/footer.js';
 import dataVisualization from './components/dataVisualization.js';
 
 import histogram from './charts/histogramChart3.js';
+
+import gaugeChart from './charts/gaugeChart.js';
+import radialChart from './charts/radial.js';
+
 import stackedBarChart from './charts/chart9.js';
 import barChart from './charts/chart6.js';
+
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
 let components = [
@@ -55,7 +60,10 @@ listTotal.forEach((item, index) => {
 // 2. Add a name of chart wrapper to chartWrappers array (it will create div with such ID)
 // 3. Call the function that draws your chart.
 let dashboard = document.querySelector('#dashboard');
-let chartsWrappers = ['histogram', 'stackedBarChart', 'barChart']; //add the name of your chart container to this array
+
+let chartsWrappers = ['histogram', 'gauge-chart', 'radial-chart', 'stackedBarChart', 'barChart']; //add the name of your chart container to this array
+
+
 
 dashboard.addEventListener('click', () => {
   componentBox.innerHTML = ``;
@@ -68,6 +76,11 @@ dashboard.addEventListener('click', () => {
 
   //call your chart function here
   histogram();
+
+  gaugeChart();
+  radialChart();
+
   stackedBarChart();
   barChart();
+
 });
