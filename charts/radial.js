@@ -8,7 +8,7 @@ var colours = {
   fill: '#' + "FFA306",
   track: '#' + "573280",
   text: '#' + "ffffff",
-  stroke: '#' + "23252e",
+  stroke: '#' + "573280",
 }
 
 var radius = 100;
