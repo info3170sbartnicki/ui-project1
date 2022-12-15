@@ -7,7 +7,7 @@ var end = parseFloat("40");
 var colours = {
   fill: '#' + "FFA306",
   track: '#' + "573280",
-  text: '#' + "000000",
+  text: '#' + "ffffff",
   stroke: '#' + "FFFFFF",
 }
 
