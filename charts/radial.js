@@ -75,7 +75,7 @@ var numberText = track.append('text')
     
      svg.append("text").attr('class', 'text')
 	.text("Number of Loyal Customers")
-	.attr("x", 35)
+	.attr("x", 50)
 	.attr("y", 325);
 
 function update(progress) {
