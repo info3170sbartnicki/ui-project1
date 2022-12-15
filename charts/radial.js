@@ -7,7 +7,7 @@ d3.csv("./charts/data/customer_satisfaction.csv").then( function(data) {
                 if (dataItem['Customer Type'].toLowerCase() === 'loyal customer') {
                     var countCustomers = (dataItem,function (d) { return d['Customer Type'].toLowerCase() === 'loyal customer'; }
                     //console.log( countCustomers) //this outputs 40 values (therefore there are 40 loyal customers)
-                } 
+                )} 
                 
             })
     
