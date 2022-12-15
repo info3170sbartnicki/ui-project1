@@ -8,11 +8,11 @@ var colours = {
   fill: '#' + "FFA306",
   track: '#' + "573280",
   text: '#' + "ffffff",
-  stroke: '#' + "FFFFFF",
+  stroke: '#' + "23252e",
 }
 
 var radius = 100;
-var border = 12;
+var border = 24;
 var strokeSpacing = 4;
 var endAngle = Math.PI * 2;
 var formatText = d3.format('.0%');
