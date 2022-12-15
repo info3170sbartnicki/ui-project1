@@ -8,10 +8,10 @@ var colours = {
   fill: '#' + "FFA306",
   track: '#' + "573280",
   text: '#' + "ffffff",
-  stroke: '#' + "573280",
+  stroke: '#' + "23022F",
 }
 
-var radius = 200;
+var radius = 150;
 var border = 24;
 var strokeSpacing = 4;
 var endAngle = Math.PI * 2;
