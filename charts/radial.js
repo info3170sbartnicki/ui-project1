@@ -23,7 +23,7 @@ var colours = {
 }
 
 var radius = 100;
-var border = 12;
+var border = 24;
 var strokeSpacing = 4;
 var endAngle = Math.PI * 2;
 var formatText = d3.format('.0');
