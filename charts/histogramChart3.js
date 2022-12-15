@@ -42,6 +42,7 @@ export default function histogram() {
     let svg = d3
       .select('#histogram')
       .append('svg')
+      .attr('id', 'hist_svg')
       .attr('viewBox', `0 0 ${svgwidth} ${svgheight}`)
       .attr('preserveAspectRatio', 'xMidYMid');
 
@@ -138,6 +139,7 @@ export default function histogram() {
       .join('g')
       .attr('class', 'hist_group')
       .append('rect')
+      .attr('class', 'hist')
       .attr('width', function (d) {
         return xscale(d.x1) - xscale(d.x0);
       })
@@ -163,7 +165,7 @@ export default function histogram() {
       .attr('font-size', 12)
       .attr('fill', 'var(--light)');
 
-    d3.selectAll('rect')
+    d3.selectAll('rect.hist')
       .transition()
       .duration(2000)
       .attr('height', function (d) {
@@ -186,7 +188,7 @@ export default function histogram() {
       yscale.domain([0, d3.max(bins, (d) => d.length)]);
       d3.axisLeft().scale(yscale);
       g.select('#yaxis').transition().duration(1500).call(yaxis);
-      d3.selectAll('rect')
+      d3.selectAll('rect.hist')
         .data(bins)
         .transition()
         .duration(1500)

@@ -13,14 +13,15 @@ import forms from './components/forms.js';
 import footer from './components/footer.js';
 import dataVisualization from './components/dataVisualization.js';
 //Charts
-import donutChart from "./charts/chart-5.js";
-import lineChart from "./charts/chart-1.js";
+import donutChart from './charts/chart-5.js';
+import lineChart from './charts/chart-1.js';
 import histogram from './charts/histogramChart3.js';
 import gaugeChart from './charts/gaugeChart.js';
 import radialChart from './charts/radial.js';
 import stackedBarChart from './charts/chart9.js';
 import barChart from './charts/chart6.js';
-
+import pieChart2 from './charts/pieChart2.js';
+import scatterPlot from './charts/scatterPlotChart4.js';
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
 let components = [
@@ -61,7 +62,17 @@ listTotal.forEach((item, index) => {
 // 3. Call the function that draws your chart.
 let dashboard = document.querySelector('#dashboard');
 
-let chartsWrappers = ['histogram', 'gauge-chart', 'radial-chart', 'stackedBarChart', 'barChart', 'line_chart', 'donut-chart']; //add the name of your chart container to this array
+let chartsWrappers = [
+  'pieChart2',
+  'histogram',
+  'gauge-chart',
+  'line_chart',
+  'scatterPlotChart4',
+  'radial-chart',
+  'stackedBarChart',
+  'donut-chart',
+  'barChart',
+]; //add the name of your chart container to this array
 
 dashboard.addEventListener('click', () => {
   componentBox.innerHTML = ``;
@@ -73,7 +84,8 @@ dashboard.addEventListener('click', () => {
   });
 
   //call your chart function here
-
+  pieChart2();
+  scatterPlot();
   lineChart();
   donutChart();
   histogram();
