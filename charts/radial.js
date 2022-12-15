@@ -13,7 +13,7 @@ d3.csv("./charts/data/customer_satisfaction.csv").then( function(data) {
                 
             })
     
-var container = document.getElementById('progress');
+var container = document.getElementById('#radial-chart');
 var beginning = 0;
 var end = 40; // this is the value that the chart fills up to (amount of loyal customers calculated above)
 
