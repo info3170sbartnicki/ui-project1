@@ -1,6 +1,6 @@
 export default function radialChart() {
 //retrieve data
-d3.csv("./data/customer_satisfaction.csv").then( function(data) {
+d3.csv("./charts/data/customer_satisfaction.csv").then( function(data) {
 
     
     data.forEach(dataItem => {
