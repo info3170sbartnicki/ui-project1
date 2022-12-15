@@ -58,11 +58,6 @@ export default function gaugeChart() {
 
     svg.append("g")
       .attr("transform", "translate(0," + (height - 2 * margin) + ")")
-      .style('color', 'var(--light)') 
-      .text('Total Flight Distance')
-      .attr("x", 15)
-	   .attr("y", 100)
-      .attr('font-size', 11)
       .call(xAxis);
 
     // Animate the gauge
