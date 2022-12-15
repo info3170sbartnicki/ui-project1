@@ -77,7 +77,7 @@ var numberText = track.append('text')
 	.text("Number of Loyal Customers")
 	.attr('font-family', 'var(--headers)')
       	.attr('fill', 'var(--light)')
-	.attr("x", 50)
+	.attr("x", 150)
 	.attr('text-anchor', 'middle')
 	.attr("y", 325);
 	
