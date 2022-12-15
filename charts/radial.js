@@ -43,7 +43,7 @@ var circle = d3.arc()
 var svg = d3.select(container)
   .append('svg')
   .attr('width', boxSize)
-  .attr('height', 400);
+  .attr('height', 375);
 
 // Group container
 var g = svg.append('g')
@@ -75,8 +75,8 @@ var numberText = track.append('text')
     
      svg.append("text").attr('class', 'text')
 	.text("Number of Loyal Customers")
-	.attr("x", 25)
-	.attr("y", 300);
+	.attr("x", 35)
+	.attr("y", 325);
 
 function update(progress) {
   //update position of endAngle
