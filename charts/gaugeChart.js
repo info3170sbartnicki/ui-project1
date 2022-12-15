@@ -59,6 +59,15 @@ export default function gaugeChart() {
     svg.append("g")
       .attr("transform", "translate(0," + (height - 2 * margin) + ")")
       .call(xAxis);
+        
+        //Title 
+         svg.append("text").attr('class', 'text')
+	    .text("Total Number of flight distance")
+	    .attr('font-family', 'var(--headers)')
+      	.attr('fill', 'var(--light)')
+        .attr("x", 150)
+        .attr('text-anchor', 'middle')
+        .attr("y", 325);
 
     // Animate the gauge
     valueIndicator
