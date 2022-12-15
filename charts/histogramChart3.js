@@ -50,7 +50,8 @@ export default function histogram() {
     svg
       .append('text')
       .text('Satisfaction Level by Category')
-      .attr('stroke', 'var(--light)')
+      .attr('font-family', 'var(--headers)')
+      .attr('fill', 'var(--light)')
       .attr('transform', `translate(${svgwidth / 2}, 20)`)
       .attr('text-anchor', 'middle');
 
