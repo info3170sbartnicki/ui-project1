@@ -60,9 +60,9 @@ export default function gaugeChart() {
       .attr("transform", "translate(0," + (height - 2 * margin) + ")")
       .style('color', 'var(--light)') 
       .text('Total Flight Distance')
-      .attr('text-anchor', 'middle')
+      .attr("x", 15)
+	   .attr("y", 100)
       .attr('font-size', 11)
-      .attr('y', 30)
       .call(xAxis);
 
     // Animate the gauge
