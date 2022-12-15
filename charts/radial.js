@@ -79,7 +79,7 @@ function update(progress) {
   //update position of endAngle
   value.attr('d', circle.endAngle(endAngle * progress));
   //update text value
-  numberText.text(formatText(progress));
+  numberText.text(formatText(progress)* 100);
 } 
 
 (function iterate() {
