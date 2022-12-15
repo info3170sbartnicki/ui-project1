@@ -13,7 +13,6 @@ import forms from './components/forms.js';
 import footer from './components/footer.js';
 import dataVisualization from './components/dataVisualization.js';
 
-import areaChart from './charts/areaChart.js';
 import histogram from './charts/histogramChart3.js';
 import stackedBarChart from './charts/chart9.js';
 import barChart from './charts/chart6.js';
@@ -56,7 +55,7 @@ listTotal.forEach((item, index) => {
 // 2. Add a name of chart wrapper to chartWrappers array (it will create div with such ID)
 // 3. Call the function that draws your chart.
 let dashboard = document.querySelector('#dashboard');
-let chartsWrappers = ['area_chart', 'histogram', 'stackedBarChart', 'barChart']; //add the name of your chart container to this array
+let chartsWrappers = ['histogram', 'stackedBarChart', 'barChart']; //add the name of your chart container to this array
 
 dashboard.addEventListener('click', () => {
   componentBox.innerHTML = ``;
@@ -68,7 +67,6 @@ dashboard.addEventListener('click', () => {
   });
 
   //call your chart function here
-  areaChart();
   histogram();
   stackedBarChart();
   barChart();
