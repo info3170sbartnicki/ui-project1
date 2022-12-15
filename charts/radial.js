@@ -16,10 +16,10 @@ var beginning = 0;
 var end = 40; // this is the value that the chart fills up to (amount of loyal customers calculated above)
 
 var colours = {
-  fill: '#' + "FFA306",
+   fill: '#' + "FFA306",
   track: '#' + "573280",
-  text: '#' + "000000",
-  stroke: '#' + "FFFFFF",
+  text: '#' + "ffffff",
+  stroke: '#' + "23022F",
 }
 
 var radius = 100;
@@ -70,6 +70,7 @@ var numberText = track.append('text')
   .attr('class', 'radial-progress')
   .attr('fill', colours.text)
   .attr('text-anchor', 'middle')
+  .style("font-size", "50px")
   .attr('dy', '.5rem');
 
 function update(progress) {
