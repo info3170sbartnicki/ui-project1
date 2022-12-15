@@ -82,7 +82,7 @@ export default function chart4() {
   function updateData(selectedGroup) {
     d3.csv("./charts/data/customer_satisfaction.csv").then(function (data) {
       // colors
-      var category = d3.scaleOrdinal().range(["#552a4f", "#92e2f9"]);
+      var category = d3.scaleOrdinal().range(["#6257a1", "#92e2f9"]);
 
       // map through data
       var dataFilter = data.map(function (d) {
@@ -183,7 +183,7 @@ export default function chart4() {
     .attr("cx", 85)
     .attr("cy", 465)
     .attr("r", 8)
-    .style("fill", "#552a4f");
+    .style("fill", "#6257a1");
 
   updateData("Arrival Delay in Minutes");
 }
