@@ -57,7 +57,6 @@ export default function lineChart() {
             .attr("text-anchor", "end")
             .attr("x", chart.innerWidth / 2)
             .attr("y", chart.innerHeight + 35)
-            .attr('transform', 'translate(-50%, -50%)')
             .text("Customer ID");
 
         plotArea.append("text")
@@ -67,7 +66,6 @@ export default function lineChart() {
             .attr("y", -30)
             .attr('x', 60)
             .attr("dy", ".75em")
-            .attr('transform', 'translate(-50%, -50%)')
             .text("Flight Distance");
 
         const line = d3.line()
