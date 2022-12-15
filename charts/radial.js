@@ -72,7 +72,7 @@ var numberText = track.append('text')
   .attr('class', 'radial-progress__text')
   .attr('fill', colours.text)
   .attr('text-anchor', 'middle')
-  .style("font-size", "106px")
+  .style("font-size", "90px")
   .attr('dy', '.5rem');
 
 function update(progress) {
