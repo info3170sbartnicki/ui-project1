@@ -1,9 +1,10 @@
 //Wrap your chart in a function with chosen name
 export default function pieChart2() {
-  //title
+  // title
   let title = d3.select("#pieChart2").append("div").attr("id", "title");
+
   title._groups[0][0].innerHTML = `
-  <h3>The proportion of Type of travel of customer responded</h2>
+  <h3>Relationship of Total Delay minutes and Departure/arrival time convenient satisfactory</h2>
   `;
 
   async function handleData() {
