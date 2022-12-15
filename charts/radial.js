@@ -11,7 +11,7 @@ var colours = {
   stroke: '#' + "573280",
 }
 
-var radius = 100;
+var radius = 200;
 var border = 24;
 var strokeSpacing = 4;
 var endAngle = Math.PI * 2;
