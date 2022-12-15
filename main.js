@@ -61,7 +61,7 @@ listTotal.forEach((item, index) => {
 // 3. Call the function that draws your chart.
 let dashboard = document.querySelector('#dashboard');
 
-let chartsWrappers = ['gauge-chart', 'radial-chart']; //add the name of your chart container to this array
+let chartsWrappers = ['histogram', 'gauge-chart', 'radial-chart', 'stackedBarChart', 'barChart']; //add the name of your chart container to this array
 
 
 
@@ -75,12 +75,12 @@ dashboard.addEventListener('click', () => {
   });
 
   //call your chart function here
-  //histogram();
+  histogram();
 
   gaugeChart();
   radialChart();
 
-  //stackedBarChart();
-  //barChart();
+  stackedBarChart();
+  barChart();
 
 });
