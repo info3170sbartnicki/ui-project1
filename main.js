@@ -16,7 +16,6 @@ import dataVisualization from './components/dataVisualization.js';
 import areaChart from './charts/areaChart.js';
 import histogram from './charts/histogramChart3.js';
 import gaugeChart from './charts/gaugeChart.js';
-//import arcChart from './charts/arcChart.js';
 import radialChart from './charts/radial.js';
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
