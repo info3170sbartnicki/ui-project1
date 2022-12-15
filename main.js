@@ -13,8 +13,8 @@ import forms from './components/forms.js';
 import footer from './components/footer.js';
 import dataVisualization from './components/dataVisualization.js';
 import areaChart from './charts/areaChart.js';
-import lineChart from "./charts/chart-1.js";
 import donutChart from "./charts/chart-5.js";
+import lineChart from "./charts/chart-1.js";
 
 let componentBox = document.getElementById('componentBox'); // Inside of it we'll display current component
 let components = [

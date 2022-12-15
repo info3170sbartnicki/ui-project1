@@ -6,77 +6,95 @@ export default function lineChart() {
         padding: 100
     }
 
-    var svg = d3.select("#line_chart")
-        .append('svg')
-        .attr('width', chart.width)
-        .attr('height', chart.height)
-        .attr('viewBox',
-            '0 0 ' + chart.width + ' ' + chart.height
-        )
-        .attr('preserveAspectRatio', 'xMidYMid meet');
-
     chart.innerWidth = chart.width - chart.padding;
     chart.innerHeight = chart.height - chart.padding;
-
-    var g = svg.append("g")
-        .attr("transform", "translate(50, 50)")
-        .attr("class", "graph");
-    //2/01/2022
 
     const lineChartTip = d3.select("#line_chart").append("div")
         .attr('class', 'line-tip')
         .style("opacity", 0);
 
-    var xscale = d3.scaleLinear().range([0, chart.innerWidth]);
-    var yscale = d3.scaleLinear().range([chart.innerHeight, 0]);
+    var svgWrapper = d3.select("#line_chart")
+    .append('svg')
+    .attr('id', 'svg')
+    .attr('width', chart.width)
+    .attr('height', chart.height)
+    .attr('viewBox',
+        '0 0 ' + chart.width + ' ' + chart.height
+    )
+    .attr('preserveAspectRatio', 'xMidYMid meet');
+
+    var svg = d3.select("#line_chart #svg");
+
+    const plotArea = svg.append("g")
+        .attr("transform", "translate(50, 50)");
+
+    const clippingRect = plotArea
+        .append("clipPath")
+        .attr("id", "clippy")
+        .append("rect")
+        .attr("width",chart.innerWidth)
+        .attr("height",chart.innerHeight)
+        .attr("fill","none")
 
     d3.csv("./charts/data/customer_satisfaction.csv").then(data => {
+
         data.forEach(function(d) {
             d['Flight Distance'] = parseInt(d['Flight Distance']);
             d.id = parseInt(d.id);
         });
 
-        xscale.domain(d3.extent(data, dataItem => {
+        const x = d3.scaleLinear().range([0,chart.innerWidth]).domain(d3.extent(data, dataItem => {
             return dataItem.id
         }));
-
-        var xaxis = d3.axisBottom()
-            .scale(xscale);
-
-        g.append("g")
-            .attr("transform", "translate(0, " + chart.innerHeight + ")")
-            .call(xaxis)
-            .style("font-size", "8px")
-            .style('color', 'var(--main)')
-            .selectAll('text')
-            .attr("transform", "rotate(-25)")
-            .style("text-anchor", "end");
-
-        yscale.domain(d3.extent(data, function(d){
-            return d['Flight Distance'];
+        let x2 = x.copy();
+        const y = d3.scaleLinear().range([chart.innerHeight,0]).domain(d3.extent(data, dataItem => {
+            return dataItem['Flight Distance'];
         }));
 
-        var yaxis = d3.axisLeft()
-            .scale(yscale);
+        plotArea.append("text")
+            .attr("class", "x-label")
+            .attr("fill", "var(--light)")
+            .attr("text-anchor", "end")
+            .attr("x", chart.innerWidth / 2)
+            .attr("y", chart.innerHeight + 35)
+            .attr('transform', 'translate(-50%, -50%)')
+            .text("Customer ID");
 
-        g.append("g")
-            .call(yaxis)
+        plotArea.append("text")
+            .attr("class", "y-label")
+            .attr("fill", "var(--light)")
+            .attr("text-anchor", "end")
+            .attr("y", -30)
+            .attr('x', 60)
+            .attr("dy", ".75em")
+            .attr('transform', 'translate(-50%, -50%)')
+            .text("Flight Distance");
+
+        const line = d3.line()
+            .x(d => x2(d.id))
+            .y(d => y(d['Flight Distance']));
+
+        const xAxis = d3.axisBottom(x2);
+        const xAxisG = plotArea.append("g")
+            .attr("transform","translate("+[0, chart.innerHeight]+")")
+            .call(xAxis)
+            .style('color', 'var(--main)');
+
+        const yAxis = d3.axisLeft(y);
+        const yAxisG = plotArea.append("g").call(yAxis)
             .style('color', 'var(--main)')
             .attr('class', 'axis');
 
-        var generateLine = d3.line();
 
-        g.append("path")
+        const path = plotArea.append("path")
             .datum(data)
             .attr("fill", "none")
             .attr("stroke", "var(--accent)")
             .attr("stroke-width", 1.5)
-            .attr("d", generateLine
-                .x(function(d){return xscale(d.id)})
-                .y(function(d){return yscale(d['Flight Distance'])})
-            );
+            .attr("d", line)
+            .attr("clip-path","url(#clippy)")
 
-        let circle = g.append("g");
+        const circle = plotArea.append("g");
 
         circle.selectAll("circle")
             .data(data)
@@ -84,8 +102,8 @@ export default function lineChart() {
             .append('g')
             .attr('class', 'circles')
             .append('circle')
-            .attr("cx", function(d){ return xscale(d.id)} )
-            .attr("cy", function(d){ return yscale(d['Flight Distance'])})
+            .attr("cx", function(d){ return x(d.id)} )
+            .attr("cy", function(d){ return y(d['Flight Distance'])})
             .attr("r", 4)
             .attr("fill", 'var(--light)')
             .attr("stroke", 'none');
@@ -112,5 +130,19 @@ export default function lineChart() {
                     .duration('50')
                     .style("opacity", 0);
             });
+
+
+        const zoom = d3.zoom()
+            .on("zoom", function(event) {
+                x2 = event.transform.rescaleX(x);
+                xAxisG.call(xAxis.scale(x2));
+                path.attr("d", line);
+
+                plotArea.selectAll('circle')
+                    .attr('cx', function(d) {return x2(d.id)});
+            })
+
+        svg.call(zoom);
     })
+
 }
