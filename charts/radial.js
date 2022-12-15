@@ -5,15 +5,13 @@ d3.csv("./charts/data/customer_satisfaction.csv").then( function(data) {
     
     data.forEach(dataItem => {
                 if (dataItem['Customer Type'].toLowerCase() === 'loyal customer') {
-                    var countCustomers = (dataItem,function (d) { return d['Customer Type'].toLowerCase() === 'loyal customer'; })
-
-                    //var count = d3.sum(dataItem,function (d) {return data['Customer Type'].toLowerCase() === 'Loyal customer'})
-                    console.log( countCustomers) //this outputs 40 values (therefore there are 40 loyal customers)
+                    var countCustomers = (dataItem,function (d) { return d['Customer Type'].toLowerCase() === 'loyal customer'; }
+                    //console.log( countCustomers) //this outputs 40 values (therefore there are 40 loyal customers)
                 } 
                 
             })
     
-var container = document.getElementById('#radial-chart');
+var container = document.getElementById('radial-chart');
 var beginning = 0;
 var end = 40; // this is the value that the chart fills up to (amount of loyal customers calculated above)
 
