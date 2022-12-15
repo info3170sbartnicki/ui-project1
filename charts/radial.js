@@ -78,7 +78,7 @@ var numberText = track.append('text')
 	.attr('font-family', 'var(--headers)')
       	.attr('fill', 'var(--light)')
 	.attr("x", 50)
-	.attr('text-anchor', 'middle');
+	.attr('text-anchor', 'middle')
 	.attr("y", 325);
 	
            
